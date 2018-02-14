@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  error:
+    whitelabel:
+      enabled: false
+debug: true
+spring:
+  thymeleaf:
+    encoding: utf-8
+    # 热部署静态文件
+    cache: false
+    # 使用HTML5标准
+    mode: HTML5
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog
+    username: root
+    password: root
+  data:
+    elasticsearch:
+      cluster-name: es-cluster
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
